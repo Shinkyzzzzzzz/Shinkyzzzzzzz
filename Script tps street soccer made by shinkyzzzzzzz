@@ -1,7 +1,9 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Library = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
+local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Library:CreateWindow({
-  Title = "Shinky Hub Best Script XD",
+  Title = "InsaneScripts",
   TabWidth = 160,
   Size = UDim2.fromOffset(580, 460),
   Acrylic = false, -- The blur may be detectable, setting this to false disables blur entirely
@@ -5032,57 +5034,8 @@ end
 end
 })
 
-Tabs.Scripts:AddButton({
-  Title = "Da Hood Mobile",
-  Callback = function()
-      Library:Notify({
-          Title = "Executed",
-          Content = "Executed! enjoy",
-          Duration = 5 
-      })
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/Allvideo/test/main/Whitelist.txt"))()
-  end
-})
-
-Tabs.Scripts:AddButton({
-  Title = "Doors script",
-  Callback = function()
-      Library:Notify({
-          Title = "Executed",
-          Content = "Executed! enjoy",
-          Duration = 5 
-      })
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/UltraStuff/scripts2/main/doors"))()
-  end
-})
-
-Tabs.Scripts:AddButton({
-  Title = "Swat.cc (Da hood by strandedlukas script)",
-  Callback = function()
-      Library:Notify({
-          Title = "Executed",
-          Content = "Executed! enjoy",
-          Duration = 5 
-      })
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/strandedlukas/Www/main/W"))();
-  end
-})
-
-Tabs.Scripts:AddButton({
-  Title = "Copy Discord",
-  Callback = function()
-      Library:Notify({
-          Title = "Executed",
-          Content = "Executed! enjoy",
-          Duration = 5 
-      })
-      setclipboard(".")
-  end
-})
-
-
 InterfaceManager:SetLibrary(Library)
 
-InterfaceManager:SetFolder("Shinkyzzzzzzz")
+InterfaceManager:SetFolder("InsaneScripts")
 
 InterfaceManager:BuildInterfaceSection(Tabs.Settings)
